@@ -700,6 +700,9 @@ button, .closePopups {
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .rew-popup.active {
   transform: translate(-50%, -50%);
@@ -716,8 +719,8 @@ button, .closePopups {
 }
 
 .rew-popup-img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .closePopups {
