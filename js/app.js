@@ -94,6 +94,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+    const bigForm = document.querySelectorAll('.big-form-popup-btn')
+
+    if(bigForm.length > 0) {
+        const BigFormPopup = document.querySelector('.big-form-popup')
+        for(let i = 0; bigForm.length > i; i ++) {
+            bigForm[i].onclick = ()=>{
+                BigFormPopup.classList.add('active')
+                document.querySelector('.closePopups').classList.add('active')
+            }
+        }
+    }
 
 
+
+    let sections = document.querySelector('section');
+
+    if(sections.classList.contains('whiteHead')) {
+        document.querySelector('header').classList.add('white')
+    }
 })
