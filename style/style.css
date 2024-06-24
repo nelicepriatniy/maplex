@@ -55,6 +55,27 @@ button, .closePopups {
   height: 100%;
   align-items: center;
 }
+.header.white {
+  background: white;
+}
+.header.white .header-logo {
+  filter: grayscale(100%) invert(100%);
+}
+.header.white .header-menu__list__item {
+  color: black;
+}
+.header.white .header-menu__list__item:hover {
+  color: white;
+}
+.header.white .header-city__item {
+  color: black;
+}
+.header.white .header-mail {
+  color: black;
+}
+.header.white .header-nums__item {
+  color: black;
+}
 
 .header-logo {
   width: 155rem;
@@ -84,6 +105,7 @@ button, .closePopups {
   align-items: center;
   justify-content: center;
   padding: 0 14rem;
+  transition: all 0.4s ease;
 }
 .header-menu__list__item:hover {
   background: #8c3ded;
@@ -1227,7 +1249,7 @@ button, .closePopups {
 .form-popup-text {
   font-family: "Wix Madefor Display", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 14rem;
   color: #000;
 }
 
@@ -1438,7 +1460,7 @@ button, .closePopups {
   width: 350rem;
   height: 350rem;
   border-radius: 100%;
-  filter: blur(325.3999938965px);
+  filter: blur(325.3999938965rem);
   position: absolute;
   right: 0;
   z-index: 1;
@@ -1595,4 +1617,63 @@ button, .closePopups {
   height: 40rem;
   cursor: pointer;
   background: none;
+}
+
+.single-deal__heading {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 500;
+  font-size: 38rem;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 38rem;
+}
+
+.deal-top-btn {
+  border-radius: 47rem;
+  padding: 10rem 24rem;
+  width: 315rem;
+  height: 48rem;
+  background: #8c3ded;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 500;
+  font-size: 16rem;
+  text-align: center;
+  color: white;
+  margin-top: 38rem;
+}
+
+.singl-deal .about-top-text-block {
+  width: 606rem;
+}
+
+.single-deal .deals-list {
+  max-width: 604rem;
+}
+.single-deal.pluss {
+  background: linear-gradient(180deg, #010101 0%, #140923 100%), linear-gradient(180deg, #140923 0%, #10121c 100%);
+}
+.single-deal.pluss .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.single-deal .pluss-item {
+  width: 100%;
+}
+.single-deal .pluss-deal-heading {
+  margin-bottom: 20rem;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 400;
+  font-size: 20rem;
+  color: white;
+}
+.single-deal.sample-text {
+  background: #010101;
+}
+
+.front-block-thing {
+  position: absolute;
+  width: 840rem;
+  height: 560rem;
+  top: 120rem;
+  right: -90rem;
 }/*# sourceMappingURL=style.css.map */
